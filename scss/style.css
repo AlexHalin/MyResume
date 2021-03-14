@@ -88,28 +88,28 @@ body, html {
     background-color: #F24150; }
 
 #bg-barbershop {
-  background-image: url("../forPortfolio/img/barbershop.jpg");
+  background-image: url("../img/forPortfolio/barbershop.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: 8rem; }
 
 #bg-bike {
-  background-image: url("../forPortfolio/img/bike.jpg");
+  background-image: url("../img/forPortfolio/bike.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: 8rem; }
 
 #bg-ticTacToe {
-  background-image: url("../forPortfolio/img/tictactoe.jpg");
+  background-image: url("../img/forPortfolio/tictactoe.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: 8rem; }
 
 #bg-gitSearch {
-  background-image: url("../forPortfolio/img/gitsearch.jpg");
+  background-image: url("../img/forPortfolio/gitsearch.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
