@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap");
+* {
+  box-sizing: border-box; }
+
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans JP', sans-serif;
+  background-color: #FFFFFF; }
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50rem;
+  height: 100%;
+  margin: 0 auto; }
+
+.cv {
+  width: 70%;
+  margin: 0 auto;
+  background-color: #F2F2F2; }
+
+.cv-my {
+  width: 100%;
+  display: flex;
+  padding: 1rem; }
+  .cv-my .my-photo {
+    background-image: url("../img/IMG_6031.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 15rem;
+    height: auto; }
+  .cv-my .my-contacts {
+    padding-left: 1rem; }
+
+.about-me {
+  padding: 0 1rem;
+  margin-bottom: 2.5rem; }
+
+.ul-control {
+  list-style: none;
+  line-height: 1.4;
+  padding-inline-start: 1rem; }
+
+.li-control {
+  padding: 0; }
+
+.download {
+  width: 100%;
+  text-align: center; }
+  .download p {
+    padding: 1.5rem 0;
+    margin-bottom: 1.5rem;
+    background-color: #717171; }
+  .download p:hover {
+    background-color: #F24150; }
+
+.portfolio {
+  width: 30%;
+  margin: 0 auto;
+  background-color: #1FAFBF; }
+  .portfolio h2 {
+    padding: 0 1rem; }
+
+.li-portfolio {
+  margin: 0 auto;
+  padding-bottom: 0.1rem;
+  width: 90%;
+  text-align: center; }
+  .li-portfolio:hover {
+    background-color: #F24150; }
+
+.link {
+  text-decoration: none;
+  color: black; }
+  .link:hover {
+    color: #F2F2F2; }
+
+.linkC {
+  text-decoration: none;
+  color: black; }
+  .linkC:hover {
+    padding-right: 0.2rem;
+    color: #f2f2f2;
+    background-color: #F24150; }
+
+#bg-barbershop {
+  background-image: url("../forPortfolio/img/barbershop.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 8rem; }
+
+#bg-bike {
+  background-image: url("../forPortfolio/img/bike.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 8rem; }
+
+#bg-ticTacToe {
+  background-image: url("../forPortfolio/img/tictactoe.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 8rem; }
+
+#bg-gitSearch {
+  background-image: url("../forPortfolio/img/gitsearch.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 8rem; }
+
+@media (max-width: 800px) {
+  .wrapper {
+    width: 100%; }
+
+  .cv {
+    width: 80%; }
+
+  .portfolio {
+    width: 80%; }
+
+  #bg-barbershop {
+    height: 20rem; }
+
+  #bg-bike {
+    height: 20rem; }
+
+  #bg-ticTacToe {
+    height: 20rem; }
+
+  #bg-gitSearch {
+    height: 20rem; } }
+@media (max-width: 550px) {
+  .cv-my {
+    flex-wrap: wrap;
+    padding: 0; }
+    .cv-my .my-photo {
+      width: 9rem;
+      height: 12rem;
+      margin: 1rem 1rem 0; }
+    .cv-my .my-contacts {
+      background-color: #1FAFBF;
+      width: 100%; } }
+@media (max-width: 425px) {
+  .cv {
+    width: 100%; }
+
+  .portfolio {
+    width: 100%; }
+
+  #bg-barbershop {
+    height: 12rem; }
+
+  #bg-bike {
+    height: 12rem; }
+
+  #bg-ticTacToe {
+    height: 12rem; }
+
+  #bg-gitSearch {
+    height: 12rem; } }
+
+/*# sourceMappingURL=style.css.map */

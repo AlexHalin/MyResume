@@ -3,17 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <title>My resume</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="scss/style.css">
     <link rel="stylesheet" href="css/normalize.css">
-    <meta name="viewport" content="width=device-width ">
+    <meta name="viewport" content="width=device-width">
 </head>
 <body>
 <main class="wrapper">
-    <h1>
-        My resume will be here soon
-    </h1>
-    <a href="https://github.com/AlexHalin">Back to GitHub</a>
+    <section class="cv">
+        <div class="cv-my">
+            <div class="my-photo"></div>
+            <div class="my-contacts">
+                <h1>Alexei Halin</h1>
+                <h2>Junior Front-end Developer</h2>
+                <ul class="ul-control li-control">Contacts:
+                    <li>
+                        <a class="linkC" target="_blank"
+                           href="https://www.google.com.ua/maps/place/Харьков,+Харьковская+область/
+                           @49.994507,36.1457422,11z/data=!3m1!4b1!4m13!1m7!3m6!1s0x80c2a4cec2910019:
+                           0xb4170ab5ff23f5ab!2z0KHQsNC90YLQsC3QnNC-0L3QuNC60LAsINCa0LDQu9C40YTQvtGA0
+                           L3QuNGPLCDQodCo0JA!3b1!8m2!3d34.0194543!4d-118.4911912!3m4!1s0x4127a09f63a
+                           b0f8b:0x2d4c18681aa4be0a!8m2!3d49.9936155!4d36.2301636?authuser=1">
+                            <img src="img/svg/locate-place.svg" alt="locate" width="16px">
+                            Ukraine.Kharkiv
+                        </a>
+                    </li>
+                    <li>
+                        <img src="img/svg/phone-call.svg" alt="phone" width="16px">
+                        +380930614072
+                    </li>
+                    <li>
+                        <a class="linkC" href="https://t.me/AlexHalin">
+                            <img src="img/svg/telegram.svg" alt="telegram" width="16px">
+                            Telegram
+                        </a>
+                    </li>
+                    <li>
+                        <img src="img/svg/email.svg" alt="email" width="16px">
+                        AlexHalin411@gmail.com
+                    </li>
+                    <li>
+                        <a class="linkC" target="_blank" href="https://github.com/AlexHalin">
+                            <img src="img/svg/github.svg" alt="github" width="16px">
+                            GitHub
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="about-me">
+            <div>
+                <h2>Objective:</h2>
+                <p>Start a career as a junior Front-end developer and grow in this field</p>
+            </div>
+            <div>
+                <h2>About:</h2>
+                <ul class="ul-control">
+                    <li>Age: 25</li>
+                    <li>Lenguage:
+                        <ul class="ul-control">
+                            <li>Russian</li>
+                            <li>Ukraine</li>
+                            <li>English (Intermediate)</li>
+                        </ul>
+                    </li>
+                    <li>Skills:
+                        <ul class="ul-control">
+                            <li>HTML</li>
+                            <li>CSS/SCSS</li>
+                            <li>JavaScript</li>
+                            <li>Basic knowledge Angular</li>
+                            <li>Git</li>
+                        </ul>
+                    </li>
+                    <li>Other:
+                        <ul class="ul-control">
+                            <li>WebStorm</li>
+                            <li>Photoshop</li>
+                            <li>Chrome DevTools</li>
+                            <li>Google</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <a href="https://drive.google.com/file/d/1ZMTPFni-e_0djGT8gH8BwWXbV1nKGN-3/view?usp=sharing" class="download link" target="_blank">
+            <p>Download PDF Resume</p>
+        </a>
+    </section>
+    <section class="portfolio">
+        <h2>Portfolio:</h2>
+        <ul class="ul-control li-control">
+            <li class="li-portfolio">
+                <a href="./forPortfolio/Barbershop/index.html" class="link" target="_blank">
+                    <div id="bg-barbershop"></div>
+                    <p>Barbershop</p>
+                </a>
+            </li>
+            <li class="li-portfolio">
+                <a href="./forPortfolio/Bike/HTML/index.html" class="link" target="_blank">
+                    <div id="bg-bike"></div>
+                    <p>Bike</p>
+                </a>
+            </li>
+            <li class="li-portfolio">
+                <a href="./forPortfolio/TicTacToe/HTML/index.html" class="link" target="_blank">
+                    <div id="bg-ticTacToe"></div>
+                    <p>Tic Tac Toe</p>
+                </a>
+            </li>
+            <li class="li-portfolio">
+                <a href="./forPortfolio/GitSearch/html/index.html" class="link" target="_blank">
+                    <div id="bg-gitSearch"></div>
+                    <p>GitSearch</p>
+                </a>
+            </li>
+        </ul>
+    </section>
 </main>
 </body>
 </html>
+
+
+
 
