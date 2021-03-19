@@ -79,10 +79,10 @@ body, html {
   .link:hover {
     color: #F2F2F2; }
 
-.linkC {
+.links {
   text-decoration: none;
   color: black; }
-  .linkC:hover {
+  .links:hover {
     padding-right: 0.2rem;
     color: #f2f2f2;
     background-color: #F24150; }
@@ -110,6 +110,13 @@ body, html {
 
 #bg-gitSearch {
   background-image: url("../img/forPortfolio/gitsearch.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 8rem; }
+
+#bg-comingsoon {
+  background-image: url("../img/forPortfolio/comingsoon.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
