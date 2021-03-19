@@ -69,13 +69,11 @@ body, html {
     padding: 1.5rem 0;
     margin-bottom: 1.5rem;
     background-color: #717171;
+    &:hover {
+      background-color: #F24150;
+    }
   }
-  p:hover {
-    background-color: #F24150;
-  }
-
 }
-
 
 .portfolio {
   width: 30%;
@@ -118,7 +116,6 @@ body, html {
   }
 }
 
-
 #bg-barbershop {
   background-image: url("../img/forPortfolio/barbershop.jpg");
   background-repeat: no-repeat;
@@ -149,19 +146,6 @@ body, html {
   background-position: center;
   background-size: cover;
   height: 8rem;
-}
-
-
-@media (max-width: 1920px) {
-
-}
-
-@media (max-width: 1200px) {
-
-}
-
-@media (max-width: 990px) {
-
 }
 
 @media (max-width: 800px) {
@@ -233,7 +217,3 @@ body, html {
     height: 12rem;
   }
 }
-
-
-//background-color: #F24150;
-//background-color: #717171;

@@ -55,8 +55,8 @@ body, html {
     padding: 1.5rem 0;
     margin-bottom: 1.5rem;
     background-color: #717171; }
-  .download p:hover {
-    background-color: #F24150; }
+    .download p:hover {
+      background-color: #F24150; }
 
 .portfolio {
   width: 30%;
