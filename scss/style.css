@@ -142,6 +142,9 @@ body, html {
     height: 20rem; }
 
   #bg-gitSearch {
+    height: 20rem; }
+
+  #bg-comingsoon {
     height: 20rem; } }
 @media (max-width: 550px) {
   .cv-my {
@@ -171,6 +174,9 @@ body, html {
     height: 12rem; }
 
   #bg-gitSearch {
+    height: 12rem; }
+
+  #bg-comingsoon {
     height: 12rem; } }
 
 /*# sourceMappingURL=style.css.map */
