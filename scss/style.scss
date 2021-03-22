@@ -1,5 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap");
 
+:root {
+  --body-bg-color: #ffffff;
+  --cv-bg-color: #F2F2F2;
+  --download-btn-color: #717171;
+  --portfolio-bg-color: #1FAFBF;
+  --text-color: black;
+
+  --hover-text-color: #F2F2F2;
+  --hover-bg-color: #F24150;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -10,7 +21,7 @@ body, html {
   margin: 0;
   padding: 0;
   font-family: 'Noto Sans JP', sans-serif;
-  background-color: #FFFFFF;
+  background-color: var(--body-bg-color);
 }
 
 .wrapper {
@@ -25,16 +36,16 @@ body, html {
   width: 70%;
   min-height: 100%;
   margin: 0 auto;
-  background-color: #F2F2F2;
+  background-color: var(--cv-bg-color);
   position: relative;
 }
 
-.cv-my {
+.cv-container {
   width: 100%;
   display: flex;
   padding: 1rem;
 
-  .my-photo {
+  .cv-photo {
     background-image: url("../img/IMG_6031.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -43,14 +54,13 @@ body, html {
     height: auto;
   }
 
-  .my-contacts {
+  .cv-contacts {
     padding-left: 1rem;
   }
 }
 
-.about-me {
+.cv-about {
   padding: 0 1rem;
-  //margin-bottom: 2.5rem;
 }
 
 .knowledge > ul {
@@ -65,6 +75,17 @@ body, html {
 
 .li-control {
   padding: 0;
+
+  .test {
+    padding: 0 0.5rem;
+  }
+
+  .test1 {
+    a {
+      padding: 0 0.5rem;
+    }
+  }
+
 }
 
 .download {
@@ -73,18 +94,11 @@ body, html {
   position: absolute;
   bottom: 0;
   left: 0;
-
-  &:hover p,
-  &:focus p {
-    background-color: #F24150;
-    outline: 1px solid white;
-  }
+  background-color: var(--download-btn-color);
 
   p {
     padding: 1.5rem 0;
     margin-bottom: 1.5rem;
-    background-color: #717171;
-
   }
 }
 
@@ -96,23 +110,21 @@ body, html {
     padding: 0 1rem;
   }
 
-  background-color: #1FAFBF;
+  background-color: var(--portfolio-bg-color);
 
 }
 
 .li-portfolio {
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
   width: 90%;
   text-align: center;
-
-  &:hover {
-    background-color: #F24150;
-  }
 }
 
 .link {
   text-decoration: none;
-  color: black;
+  color: var(--text-color);
 
   p {
     margin: 0;
@@ -120,17 +132,9 @@ body, html {
   }
 
   &:hover {
-    color: #F2F2F2;
-  }
-}
-
-.links {
-  text-decoration: none;
-  color: black;
-  &:hover {
-    padding-right: 0.2rem;
-    color: #f2f2f2;
-    background-color: #F24150;
+    color:var(--hover-text-color);
+    background-color: var(--hover-bg-color);
+    transition: .5s;
   }
 }
 
@@ -206,18 +210,18 @@ body, html {
 }
 
 @media (max-width: 550px) {
-  .cv-my {
+  .cv-container {
     flex-wrap: wrap;
     padding: 0;
 
-    .my-photo {
+    .cv-photo {
       width: 9rem;
       height: 12rem;
       margin: 1rem 1rem 0;
     }
 
-    .my-contacts {
-      background-color: #1FAFBF;
+    .cv-contacts {
+      background-color: var(--portfolio-bg-color);
       width: 100%;
     }
   }
