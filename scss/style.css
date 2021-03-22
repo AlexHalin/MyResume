@@ -19,8 +19,10 @@ body, html {
 
 .cv {
   width: 70%;
+  min-height: 100%;
   margin: 0 auto;
-  background-color: #F2F2F2; }
+  background-color: #F2F2F2;
+  position: relative; }
 
 .cv-my {
   width: 100%;
@@ -37,8 +39,10 @@ body, html {
     padding-left: 1rem; }
 
 .about-me {
-  padding: 0 1rem;
-  margin-bottom: 2.5rem; }
+  padding: 0 1rem; }
+
+.knowledge > ul {
+  margin-bottom: 4rem; }
 
 .ul-control {
   list-style: none;
@@ -50,13 +54,17 @@ body, html {
 
 .download {
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0; }
+  .download:hover p, .download:focus p {
+    background-color: #F24150;
+    outline: 1px solid white; }
   .download p {
     padding: 1.5rem 0;
     margin-bottom: 1.5rem;
     background-color: #717171; }
-    .download p:hover {
-      background-color: #F24150; }
 
 .portfolio {
   width: 30%;
@@ -67,7 +75,6 @@ body, html {
 
 .li-portfolio {
   margin: 0 auto;
-  padding-bottom: 0.1rem;
   width: 90%;
   text-align: center; }
   .li-portfolio:hover {
@@ -76,6 +83,9 @@ body, html {
 .link {
   text-decoration: none;
   color: black; }
+  .link p {
+    margin: 0;
+    padding: 1rem; }
   .link:hover {
     color: #F2F2F2; }
 
@@ -156,7 +166,13 @@ body, html {
       margin: 1rem 1rem 0; }
     .cv-my .my-contacts {
       background-color: #1FAFBF;
-      width: 100%; } }
+      width: 100%; }
+
+  .download {
+    margin-bottom: 2.5rem; }
+
+  .knowledge > ul {
+    margin-bottom: 8rem; } }
 @media (max-width: 425px) {
   .cv {
     width: 100%; }
