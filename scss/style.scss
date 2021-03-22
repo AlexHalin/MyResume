@@ -76,11 +76,11 @@ body, html {
 .li-control {
   padding: 0;
 
-  .test {
+  .control-link {
     padding: 0 0.5rem;
   }
 
-  .test1 {
+  .control {
     a {
       padding: 0 0.5rem;
     }
@@ -111,7 +111,6 @@ body, html {
   }
 
   background-color: var(--portfolio-bg-color);
-
 }
 
 .li-portfolio {
@@ -131,10 +130,14 @@ body, html {
     padding: 1rem;
   }
 
-  &:hover {
+  &:hover,
+  &:focus{
     color:var(--hover-text-color);
     background-color: var(--hover-bg-color);
     transition: .5s;
+
+    outline-style: none;
+    outline-color: transparent;
   }
 }
 
