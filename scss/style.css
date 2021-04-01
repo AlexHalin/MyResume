@@ -163,15 +163,20 @@ body, html {
   background-size: cover;
   height: 8rem; }
 
-@media (max-width: 800px) {
+@media (max-width: 825px) {
   .wrapper {
     width: 100%; }
 
   .cv {
-    width: 80%; }
+    width: 80%;
+    height: auto; }
 
   .portfolio {
-    width: 80%; }
+    width: 80%;
+    height: auto; }
+    .portfolio ul {
+      overflow-y: hidden;
+      height: auto; }
 
   #bg-barbershop {
     height: 20rem; }
@@ -194,9 +199,6 @@ body, html {
   #bg-angularToDoList {
     height: 20rem; } }
 @media (max-width: 550px) {
-  .cv {
-    height: auto; }
-
   .cv-container {
     flex-wrap: wrap;
     padding: 0; }
@@ -212,13 +214,7 @@ body, html {
     margin-bottom: 2.5rem; }
 
   .knowledge > ul {
-    margin-bottom: 8rem; }
-
-  .portfolio {
-    height: auto; }
-    .portfolio ul {
-      overflow-y: hidden;
-      height: auto; } }
+    margin-bottom: 8rem; } }
 @media (max-width: 425px) {
   .cv {
     width: 100%; }
