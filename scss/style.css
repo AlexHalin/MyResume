@@ -28,7 +28,7 @@ body, html {
 
 .cv {
   width: 70%;
-  min-height: 100%;
+  height: 100vh;
   margin: 0 auto;
   background-color: var(--cv-bg-color);
   position: relative; }
@@ -78,8 +78,12 @@ body, html {
 
 .portfolio {
   width: 30%;
+  height: 100vh;
   margin: 0 auto;
   background-color: var(--portfolio-bg-color); }
+  .portfolio ul {
+    overflow-y: scroll;
+    height: 93%; }
   .portfolio h2 {
     padding: 0 1rem; }
 
@@ -102,6 +106,13 @@ body, html {
     transition: .5s;
     outline-style: none;
     outline-color: transparent; }
+
+#element::-webkit-scrollbar {
+  width: 10px;
+  background-color: var(--cv-bg-color); }
+
+#element::-webkit-scrollbar-thumb {
+  background-color: #333233; }
 
 #bg-barbershop {
   background-image: url("../img/forPortfolio/barbershop.jpg");
@@ -131,8 +142,22 @@ body, html {
   background-size: cover;
   height: 8rem; }
 
-#bg-comingsoon {
-  background-image: url("../img/forPortfolio/comingsoon.jpg");
+#bg-countdownTimer {
+  background-image: url("../img/forPortfolio/countdownTimer.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 8rem; }
+
+#bg-quiz {
+  background-image: url("../img/forPortfolio/quiz.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 8rem; }
+
+#bg-angularToDoList {
+  background-image: url("../img/forPortfolio/angularToDoList.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -160,9 +185,18 @@ body, html {
   #bg-gitSearch {
     height: 20rem; }
 
-  #bg-comingsoon {
+  #bg-countdownTimer {
+    height: 20rem; }
+
+  #bg-quiz {
+    height: 20rem; }
+
+  #bg-angularToDoList {
     height: 20rem; } }
 @media (max-width: 550px) {
+  .cv {
+    height: auto; }
+
   .cv-container {
     flex-wrap: wrap;
     padding: 0; }
@@ -178,7 +212,13 @@ body, html {
     margin-bottom: 2.5rem; }
 
   .knowledge > ul {
-    margin-bottom: 8rem; } }
+    margin-bottom: 8rem; }
+
+  .portfolio {
+    height: auto; }
+    .portfolio ul {
+      overflow-y: hidden;
+      height: auto; } }
 @media (max-width: 425px) {
   .cv {
     width: 100%; }
@@ -198,7 +238,13 @@ body, html {
   #bg-gitSearch {
     height: 12rem; }
 
-  #bg-comingsoon {
+  #bg-countdownTimer {
+    height: 12rem; }
+
+  #bg-quiz {
+    height: 12rem; }
+
+  #bg-angularToDoList {
     height: 12rem; } }
 
 /*# sourceMappingURL=style.css.map */
