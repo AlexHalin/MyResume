@@ -91,9 +91,7 @@ body, html {
 .download {
   width: 100%;
   text-align: center;
-  //position: absolute;
-  bottom: 0;
-  left: 0;
+  margin: 0 auto;
   background-color: var(--download-btn-color);
 
   p {
@@ -222,6 +220,10 @@ body, html {
     height: auto;
   }
 
+  .download {
+    width: 80%;
+  }
+
   .portfolio {
     width: 80%;
     height: auto;
@@ -290,6 +292,10 @@ body, html {
 
 @media (max-width: 425px) {
   .cv {
+    width: 100%;
+  }
+
+  .download {
     width: 100%;
   }
   .portfolio {
